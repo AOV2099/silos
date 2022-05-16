@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/A_209/AndroidStudioProjects/silos2/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.2445" />
+        <entry key="..\:/Users/A_209/AndroidStudioProjects/silos2/app/src/main/res/drawable/splash_screen.xml" value="0.1375" />
         <entry key="..\:/Users/A_209/AndroidStudioProjects/silos2/app/src/main/res/layout/activity_auth_acativity.xml" value="0.41637010676156583" />
         <entry key="..\:/Users/A_209/AndroidStudioProjects/silos2/app/src/main/res/layout/activity_auth_activity.xml" value="0.33" />
+        <entry key="..\:/Users/A_209/AndroidStudioProjects/silos2/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/A_209/AndroidStudioProjects/silos2/app/src/main/res/layout/activity_silos_detail.xml" value="0.2651975683890577" />
       </map>
     </option>

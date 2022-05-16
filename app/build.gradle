@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -63,6 +65,8 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:29.1.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 
     // Navigation component
     implementation("androidx.navigation:navigation-fragment-ktx:2.4.1")

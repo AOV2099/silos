@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "592145783385",
+    "firebase_url": "https://silos-3f2ec-default-rtdb.firebaseio.com",
     "project_id": "silos-3f2ec",
     "storage_bucket": "silos-3f2ec.appspot.com"
   },
@@ -18,6 +19,43 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.aov2099.silos",
+            "certificate_hash": "dff2c3ccf3eacd993c95aeb0af00cda61dc8bc65"
+          }
+        },
+        {
+          "client_id": "592145783385-4hhq7eeuv0hojue2trllqot99upsooj5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLdBK8F3dBSW7tj-nNccOlxmDrmamPzyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592145783385-4hhq7eeuv0hojue2trllqot99upsooj5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592145783385:android:3640dae0efa942c410af48",
+        "android_client_info": {
+          "package_name": "macom.aov2099.silos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592145783385-vp1gk3t4lnn7e642o9alteu4u80qq8ho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "macom.aov2099.silos",
             "certificate_hash": "dff2c3ccf3eacd993c95aeb0af00cda61dc8bc65"
           }
         },

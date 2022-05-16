@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
@@ -63,7 +64,7 @@ class AuthActivity : AppCompatActivity() {
 
             binding.btnRegister.setOnClickListener {
 
-                if( binding.etEmail.text.isNotEmpty() && binding.etPassword.text.isNotEmpty()){
+               /* if( binding.etEmail.text.isNotEmpty() && binding.etPassword.text.isNotEmpty()){
 
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword( binding.etEmail.text.toString(), binding.etPassword.text.toString() ).addOnCompleteListener{
 
@@ -73,7 +74,7 @@ class AuthActivity : AppCompatActivity() {
                             showAlert("Ha ocurrido un error al dar de alta la cuenta")
                         }
                     }
-                }
+                }*/
 
             }
 
@@ -84,9 +85,9 @@ class AuthActivity : AppCompatActivity() {
 
 
 
-        binding.btnLogIn.setOnClickListener {
+       /* binding.btnLogIn.setOnClickListener {
 
-            if(Network.conExistsAct(this)){
+            if(Network.conExists (this)){
 
                 if( binding.etEmail.text.isNotEmpty() && binding.etPassword.text.isNotEmpty()){
 
@@ -104,14 +105,14 @@ class AuthActivity : AppCompatActivity() {
                 Toast.makeText(this, "Check Internet connection", Toast.LENGTH_SHORT).show()
             }
 
-        }
+        }*/
 
         binding.btnGoogle.setOnClickListener {
 
             if(Network.conExists(this)){
                 // auth con google
                 val googleConf = GoogleSignInOptions.Builder( GoogleSignInOptions.DEFAULT_SIGN_IN )
-                    .requestIdToken( getString(R.string.default_web_client_id) )//it already exists. Therefore it is a bug
+                    .requestIdToken( getString(R.string.default_web_client_id)  )//it already exists. Therefore it is a bug
                     .requestEmail()
                     .build()
 
@@ -184,14 +185,18 @@ class AuthActivity : AppCompatActivity() {
                         if (it.isSuccessful){
                             showHome( account.email?:"", ProviderType.GOOGLE)
                         }else{
+                            Log.e("ERROR", it.result.toString())
                             showAlert("An error Has occurred trying to access Google")
+
                         }
                     }
 
                 }
 
             }catch (e: ApiException){
+                Log.e("ERROR", e.toString())
                 showAlert("Google services error")
+                //showHome( "", ProviderType.GOOGLE)
             }
 
         }

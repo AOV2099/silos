@@ -15,11 +15,11 @@
         <activity
             android:name=".view.MainActivity"
             android:exported="false"
-            android:theme="@style/SplashTheme" />
+            android:theme="@style/Theme.Silos" />
         <activity
             android:name=".view.AuthActivity"
             android:exported="true"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/Theme.Silos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
